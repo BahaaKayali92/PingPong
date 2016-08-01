@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PingPong</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="parse_error">Error During Parsing</string>
+    <string name="statics_fragment">HERE you can show the player statics</string>
+    <string name="match_fragment">HERE you can make new match</string>
+    <string name="rank_fragment">HERE you can show the player ranking</string>
+</resources>

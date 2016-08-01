@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000"
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/balls"
+        android:id="@+id/tour_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="WELCOME TO"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="PING PONG TV"
+        android:textColor="@color/lightblue"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_below="@+id/ping"
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/butterflylogo"
+        android:transitionName="profile" />
+    <Button
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/start_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/logo"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rectangle_start_btn"
+        android:text="START PROGRAME"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/tour_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/start_btn"
+        android:background="@drawable/rectangle_blue_btn"
+        android:text="TAKE A TOUR"
+        android:textColor="@color/blue"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

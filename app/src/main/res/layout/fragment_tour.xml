@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/fragment_img"
+    android:layout_centerInParent="true"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:src="@drawable/background_tour"
+    android:layout_width="match_parent"
+    android:layout_height="400dp" />
+    <TextView
+        android:id="@+id/fragment_descreption"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+
+        android:layout_below="@+id/fragment_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

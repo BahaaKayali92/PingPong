@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_layout" android:id="@+id/toolbar"/>
+    <ImageView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/butterflylogo" />
+
+    <LinearLayout
+        android:id="@+id/first_player_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/firstPlayer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="First Player Name"
+            android:textColor="@color/white" />
+
+        <Spinner
+            android:id="@+id/first_player_names_spinners"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/first_player_score"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/yellow"
+            android:inputType="number"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_player_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_player_layout"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/secondPlayer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Second Player Name"
+            android:textColor="@color/white" />
+
+        <Spinner
+            android:id="@+id/second_player_names_spinners"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/second_player_score"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/yellow"
+            android:inputType="number"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_match_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/second_player_layout"
+        android:layout_margin="20dp"
+        android:background="@drawable/rectangle_start_btn"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+</RelativeLayout>
+    </ScrollView>

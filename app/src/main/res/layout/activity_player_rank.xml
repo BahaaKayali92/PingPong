@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_layout" android:id="@+id/toolbar"/>
+
+    <ImageView
+        android:transitionName="profile"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/butterflylogo"
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+<ListView
+
+   android:backgroundTint="@color/white"
+    android:layout_below="@+id/logo"
+    android:id="@+id/player_list"
+    android:divider="@color/darkgray"
+    android:dividerHeight="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+    <android.support.design.widget.FloatingActionButton
+
+
+        android:src="@drawable/rocket"
+        app:backgroundTint="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/fab"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:clickable="true"/>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>
